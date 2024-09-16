@@ -33,7 +33,22 @@ const { title, description, keywords, canonical, robots, img } = Astro.props;
   </body>
 </html>
 
-<style is:inline>
+<style is:global>
+  /** Scrollbar */
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    @apply bg-emerald-400;
+  }
+
   @keyframes fadeIn {
     to {
       opacity: 1;
