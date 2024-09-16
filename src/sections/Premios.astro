@@ -1,0 +1,77 @@
+---
+import Box from "../components/Box.astro";
+---
+
+<section id="premios" class="lg:w-[60vw] lg:ms-[39vw] py-20 px-10">
+  <Box>
+    <h2>Participación abierta para:</h2>
+    <ul class="mb-4 before:content-['...'] before:block">
+      <li>Jóvenes de entre 18 y 30 años</li>
+      <li>Estudiantes de FP que tengan interés en emprender</li>
+      <li>Personas jóvenes que hayan finalizado sus estudios</li>
+    </ul>
+    <p class="mb-4">¡Es un programa totalmente gratuito!</p>
+    <h2 class="mb-4">Premios:</h2>
+    <details class="cursor-pointer" name="premios">
+      <summary>Categoría individual</summary>
+      <div class="grid lg:grid-cols-2 gap-10">
+        <div class="flex flex-col gap-4">
+          <img
+            src="/images/computer.webp"
+            alt="Primer premio"
+            width="256"
+            height="256"
+            loading="lazy"
+            class="h-64 object-contain opacity-50 hover:opacity-100 transition-opacity"
+          />
+          <p class="mt-auto mb-4">Primer premio: Aparato tecnológico valorado en 1.200€</p>
+        </div>
+        <div class="flex flex-col gap-4">
+          <img
+            src="/images/camera.webp"
+            alt="Primer premio"
+            width="256"
+            height="256"
+            loading="lazy"
+            class="h-64 object-contain opacity-50 hover:opacity-100 transition-opacity"
+          />
+          <p class="mt-auto mb-4">Segundo premio: Aparato tecnológico valorado en 500€</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="cursor-pointer" name="premios">
+      <summary>Categoría grupal</summary>
+      <div class="grid md:grid-cols-2 gap-10">
+        <div class="flex flex-col gap-4">
+          <img
+            src="/images/redtrophy.webp"
+            alt="Primer premio"
+            width="256"
+            height="256"
+            loading="lazy"
+            class="h-64 object-contain opacity-50 hover:opacity-100 transition-opacity"
+          />
+          <p class="mt-auto mb-4">
+            Primer premio: Tarjetas regalo de 200€ para cada miembro del equipo
+            ganador
+          </p>
+        </div>
+        <div class="flex flex-col gap-4">
+          <img
+            src="/images/trophy.webp"
+            alt="Primer premio"
+            width="256"
+            height="256"
+            loading="lazy"
+            class="h-64 object-contain opacity-50 hover:opacity-100 transition-opacity"
+          />
+          <p class="mt-auto mb-4">
+            Segundo premio: Tarjetas regalo de 100€ para cada miembro del grupo
+            ganador
+          </p>
+        </div>
+      </div>
+    </details>
+  </Box>
+</section>

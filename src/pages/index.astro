@@ -1,9 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Background from "../sections/Background.astro";
+import Background from "../components/Background.astro";
 import Hero from "../sections/Hero.astro";
+import Main from "../sections/Main.astro";
+import Premios from "../sections/Premios.astro";
 import Storytelling from "../sections/Storytelling.astro";
 import Title from "../sections/Title.astro";
+import Form from "../components/Form.astro";
+import Header from "../sections/Header.astro";
 ---
 
 <Layout
@@ -14,8 +18,12 @@ import Title from "../sections/Title.astro";
   robots=""
   img=""
 >
+  <Header />
   <Hero />
   <Title />
   <Storytelling />
+  <Main />
+  <Premios />
+  <Form />
   <Background />
 </Layout>

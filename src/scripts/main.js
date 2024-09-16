@@ -10,41 +10,22 @@ function scrollToSection(id) {
   }
 }
 
-// document.getElementById("scrollToForm").addEventListener("click", function () {
-//   scrollToSection("form");
-// });
+document.getElementById("scrollToForm").addEventListener("click", function () {
+  scrollToSection("form");
+});
 
-// document
-//   .getElementById("scrollToPremios")
-//   .addEventListener("click", function () {
-//     scrollToSection("premios");
-//   });
+document
+  .getElementById("scrollToPremios")
+  .addEventListener("click", function () {
+    scrollToSection("premios");
+  });
 
-// document.getElementById("top").addEventListener("click", function () {
-//   window.scrollTo({
-//     top: 0,
-//     behavior: "smooth",
-//   });
-// });
-
-// // Girl positions
-// const girl = document.getElementById("girl");
-// const windowSize = window.innerHeight;
-// const bodyHeight = document.body.offsetHeight;
-// const maxScrollPosition = bodyHeight - windowSize - windowSize;
-
-// function handleScroll() {
-//   const scrollPosition = window.scrollY;
-
-//   if (scrollPosition >= maxScrollPosition) {
-//     girl.style.position = "fixed";
-//   } else {
-//     girl.style.position = "-webkit-sticky";
-//     girl.style.position = "sticky";
-//   }
-// }
-
-// window.addEventListener("scroll", handleScroll);
+document.getElementById("top").addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
 
 // GSAP
 import { gsap } from "gsap";
@@ -72,15 +53,15 @@ function horizontalScrollTitle() {
 }
 
 function horizontalScrollChallenges() {
-  const cards = gsap.utils.toArray(".card");
   const cardsContainer = document.querySelector(".cards-container");
+  const cards = gsap.utils.toArray(".cards-container > div");
   const horizontalTween = gsap.to(cardsContainer, {
     x: window.innerWidth - cardsContainer.scrollWidth,
     duration: cards.length,
     ease: "none",
     scrollTrigger: {
       trigger: ".pin-panel",
-      start: "top 89px",
+      start: "top top",
       end: "+=200%",
       pin: true,
       scrub: true,

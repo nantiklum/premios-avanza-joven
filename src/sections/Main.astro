@@ -1,0 +1,134 @@
+---
+import Box from "../components/Box.astro";
+import Button from "../components/Button.astro";
+---
+
+<main class="overflow-x-hidden pin-panel">
+  <div
+    class="cards-container w-fit flex flex-col gap-10 lg:flex-row lg:gap-0 lg:flex-nowrap p-10"
+  >
+    <Box class="lg:ms-[39vw] lg:m-10">
+      <h2>Etapas del camino</h2>
+      <p class="mb-4 before:content-['...'] before:block">
+        Para conseguir el premio, Raúl se sumerge en un mundo de conocimiento y
+        creatividad, guiado por personas expertas que lo inspiran y lo desafían
+        a dar lo mejor de sí mismo.
+      </p>
+
+      <ul class="mb-4">
+        <li>Etapa 1: Formación</li>
+        <li>Etapa 2: Guía</li>
+        <li>Etapa 3: Presentación del proyecto</li>
+        <li>Etapa 4: Decisión final</li>
+      </ul>
+
+      <p class="mb-4">
+        Las etapas 1 y 2 serán clave para alcanzar el premio final. Cuanta más
+        formación y apoyo acumule, más oportunidades de éxito tendrá.
+      </p>
+    </Box>
+    <Box class="lg:m-10">
+      <h3>Etapa 1: Formación</h3>
+      <p class="mb-4 before:content-['...'] before:block">
+        Raúl piensa que comienza su camino solo. Están él y su mochila. Y,
+        además, sin apenas conocimientos sobre emprendimiento, pero sí sobre las
+        bases de su idea de negocio. Su mochila está medio vacía y tiene que
+        llenarla antes de llegar a la última etapa.
+      </p>
+      <p class="mb-4">
+        A medida que avanza, Raúl se da cuenta de que tiene que formarse en
+        materia de autoempleo. Cuenta con experiencia en el sector en el que
+        quiere emprender, pero no sabe cómo dar sus primeros pasos para darse de
+        alta como autónomo, hacer un presupuesto o gestionar la fiscalidad de su
+        posible forma jurídica.
+      </p>
+      <p class="mb-4">
+        Comienza con un sencillo y breve curso sobre cómo hablar en público
+        (algo básico para presentar su proyecto al jurado) pero tiene que
+        estudiar de forma autodidacta un poco más antes de poder acceder a
+        tutorías con una persona experta y, así, ir llenando su mochila
+        emprendedora y avanzar en su camino.
+      </p>
+      <Button
+        href="https://appalumnelms.com/pages/courseext/Avanza-joven?c=3429bee034a5e431995eeeb2681f9e74"
+        text="Empieza a llenar tu mochila emprendedora"
+        blank
+      />
+    </Box>
+    <Box class="lg:m-10">
+      <h3>Tarjeta Etapa 2: Guía</h3>
+      <p class="mb-4 before:content-['...'] before:block">
+        A medida que avanza, la idea de Raúl va tomando forma y su plan de
+        empresa cobrando vida. Pero necesita la guía de una persona experta
+      </p>
+      <p class="mb-4">
+        La formación recibida en emprendimiento es imprescindible pero ahora
+        debe ponerlo en práctica y se da cuenta que la experiencia de alguien
+        que ya haya recorrido el camino sería crucial, para ello cuenta con un
+        mentor/a que estará a su lado en todo momento.
+      </p>
+      <p class="mb-4">
+        Para ello, tiene que pedir asesoramiento. Este puede ser:
+      </p>
+      <ul class="mb-4">
+        <li>Por llamada telefónica</li>
+        <li>Por vídeo llamada</li>
+        <li>Por correo electrónico</li>
+      </ul>
+      <Button
+        href="https://ob10l202vdo.typeform.com/to/mWGqFgIL"
+        text="Para recibir este apoyo, pincha aquí"
+        blank
+      />
+    </Box>
+    <Box class="lg:m-10">
+      <h3>Etapa 3: Presentación del proyecto</h3>
+      <p class="mb-4 before:content-['...'] before:block">
+        Raúl y su equipo han trabajado duro para completar su proyecto y están
+        preparados para presentarlo. Con nerviosismo y determinación, Raúl
+        comparte su visión, su pasión y su plan para cambiar el mundo.
+      </p>
+      <p class="mb-4">
+        <a
+          class="underline"
+          href="https://ob10l202vdo.typeform.com/premiosAJ"
+          target="_blank">Deposita su plan de empresa aquí</a
+        >
+      </p>
+      <p class="mb-4">
+        Este será el modo de ganar un premio valorado en 1.200 euros. Pero
+        ¡atención! Aquí los tiempos son importantísimos. El plan tendrá que ser
+        depositado antes del 31 de enero de 2025. Si está fuera de plazo, Raúl
+        perderá su oportunidad de abrir una puerta diferente a su éxito.
+      </p>
+    </Box>
+    <Box class="lg:m-10 lg:me-5">
+      <h3>Etapa 4: Decisión final</h3>
+      <p class="mb-4 before:content-['...'] before:block">
+        Cuando el veredicto finalmente llega, no puede contener la emoción al
+        escuchar su nombre como ganador del premio.
+      </p>
+      <p class="mb-4">
+        El premio no solo representa un reconocimiento a su esfuerzo y
+        dedicación, sino también el inicio de un nuevo capítulo en su vida. Con
+        el apoyo y la confianza recibidos, Raúl está listo para abrir esa puerta
+        diferente hacia su éxito, listo para enfrentar los desafíos que se
+        presenten en su camino y listo para hacer realidad sus sueños más
+        grandes.
+      </p>
+      <p class="mb-4">
+        ¿Estás listo para abrir tu propia puerta diferente? ¡Únete a nosotros en
+        este emocionante viaje hacia el emprendimiento y descubre todo lo que
+        puedes lograr!
+      </p>
+    </Box>
+  </div>
+</main>
+
+<style>
+  @media (min-width: 1024px) {
+    .cards-container > :global(div) {
+      width: calc(60vw - theme(spacing.20));
+    }
+  }
+</style>

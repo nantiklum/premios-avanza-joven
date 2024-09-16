@@ -1,0 +1,17 @@
+---
+interface Props {
+  href: string;
+  text: string;
+  blank?: boolean;
+}
+
+const { href, text, blank } = Astro.props;
+---
+
+<a
+  href={href}
+  class="inline-block border border-emerald-950 bg-emerald-950 p-4"
+  target={blank ? "_blank" : "_self"}
+>
+  {text}
+</a>
