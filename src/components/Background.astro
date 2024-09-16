@@ -1,17 +1,34 @@
 <img
+  id="background"
   src="/images/background.webp"
   alt=""
-  class="fixed top-0 left-0 w-full h-full -z-50 object-cover"
+  class="fixed top-0 left-0 w-full h-full -z-50 object-cover opacity-0"
 />
 
 <img
+  id="boy"
   src="/images/boy.webp"
   alt=""
-  class="fixed bottom-0 w-[40%] h-1/2 lg:h-dvh z-10 object-contain object-bottom"
+  class="fixed bottom-0 w-[40%] h-1/2 lg:h-[95dvh] z-10 object-contain object-bottom -translate-x-full"
 />
 
 <img
+  id="interface"
   src="/images/interface-circle.gif"
   alt=""
-  class="absolute top-0 left-0 w-full h-full -z-50 object-contain object-[85%_50%] mix-blend-screen hue-rotate-[270deg]"
+  class="absolute top-0 left-0 w-full h-full -z-50 object-contain object-[85%_50%] mix-blend-screen hue-rotate-[270deg] opacity-0"
 />
+
+<style>
+  #background {
+    animation: fadeIn 500ms ease-in-out 100ms forwards;
+  }
+
+  #boy {
+    animation: slideIn 500ms ease-in-out 250ms forwards;
+  }
+
+  #interface {
+    animation: fadeIn 500ms ease-in-out 250ms forwards;
+  }
+</style>

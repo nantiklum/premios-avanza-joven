@@ -7,7 +7,7 @@ import Button from "../components/Button.astro";
   <div
     class="cards-container w-fit flex flex-col gap-10 lg:flex-row lg:gap-0 lg:flex-nowrap p-10"
   >
-    <Box class="lg:ms-[39vw] lg:m-10">
+    <Box class="lg:ms-[39vw] lg:m-10 lg:overflow-y-auto">
       <h2>Etapas del camino</h2>
       <p class="mb-4 before:content-['...'] before:block">
         Para conseguir el premio, Raúl se sumerge en un mundo de conocimiento y
@@ -27,7 +27,7 @@ import Button from "../components/Button.astro";
         formación y apoyo acumule, más oportunidades de éxito tendrá.
       </p>
     </Box>
-    <Box class="lg:m-10">
+    <Box class="lg:m-10 lg:overflow-y-auto">
       <h3>Etapa 1: Formación</h3>
       <p class="mb-4 before:content-['...'] before:block">
         Raúl piensa que comienza su camino solo. Están él y su mochila. Y,
@@ -55,7 +55,7 @@ import Button from "../components/Button.astro";
         blank
       />
     </Box>
-    <Box class="lg:m-10">
+    <Box class="lg:m-10 lg:overflow-y-auto">
       <h3>Tarjeta Etapa 2: Guía</h3>
       <p class="mb-4 before:content-['...'] before:block">
         A medida que avanza, la idea de Raúl va tomando forma y su plan de
@@ -81,7 +81,7 @@ import Button from "../components/Button.astro";
         blank
       />
     </Box>
-    <Box class="lg:m-10">
+    <Box class="lg:m-10 lg:overflow-y-auto">
       <h3>Etapa 3: Presentación del proyecto</h3>
       <p class="mb-4 before:content-['...'] before:block">
         Raúl y su equipo han trabajado duro para completar su proyecto y están
@@ -129,6 +129,7 @@ import Button from "../components/Button.astro";
   @media (min-width: 1024px) {
     .cards-container > :global(div) {
       width: calc(60vw - theme(spacing.20));
+      max-height: calc(100dvh - theme(spacing.40));
     }
   }
 </style>

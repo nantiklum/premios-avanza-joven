@@ -32,3 +32,17 @@ const { title, description, keywords, canonical, robots, img } = Astro.props;
     <script src="../scripts/main.js"></script>
   </body>
 </html>
+
+<style is:inline>
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideIn {
+    to {
+      transform: translate(0, 0);
+    }
+  }
+</style>
