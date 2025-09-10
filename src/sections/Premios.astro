@@ -18,71 +18,27 @@ import Button from "../components/Button.astro";
     <h2 class="mb-4">Premios:</h2>
     <details class="cursor-pointer" name="premios">
       <summary>Categoría individual</summary>
-      <div class="grid lg:grid-cols-2 gap-10">
-        <div class="flex flex-col gap-4">
-          <img
-            src="/images/computer.webp"
-            alt="Primer premio"
-            width="256"
-            height="256"
-            loading="lazy"
-            class="h-64 object-contain opacity-50 hover:opacity-100 transition-opacity"
-          />
-          <p class="mt-auto mb-4">
-            Primer premio: Aparato tecnológico valorado en 1.200€
-          </p>
-        </div>
-        <div class="flex flex-col gap-4">
-          <img
-            src="/images/camera.webp"
-            alt="Primer premio"
-            width="256"
-            height="256"
-            loading="lazy"
-            class="h-64 object-contain opacity-50 hover:opacity-100 transition-opacity"
-          />
-          <p class="mt-auto mb-4">
-            Segundo premio: Aparato tecnológico valorado en 500€
-          </p>
-        </div>
-      </div>
+      <ul class="mb-4 list-disc ps-8">
+        <li>Primer premio: 1.200 euros en metálico.</li>
+        <li>Segundo premio: 600 euros en metálico.</li>
+      </ul>
     </details>
 
     <details class="cursor-pointer mb-4" name="premios">
       <summary>Categoría grupal</summary>
-      <div class="grid md:grid-cols-2 gap-10">
-        <div class="flex flex-col gap-4">
-          <img
-            src="/images/redtrophy.webp"
-            alt="Primer premio"
-            width="256"
-            height="256"
-            loading="lazy"
-            class="h-64 object-contain opacity-50 hover:opacity-100 transition-opacity"
-          />
-          <p class="mt-auto mb-4">
-            Primer premio: Tarjetas regalo de 200€ para cada miembro del equipo
-            ganador
-          </p>
-        </div>
-        <div class="flex flex-col gap-4">
-          <img
-            src="/images/trophy.webp"
-            alt="Primer premio"
-            width="256"
-            height="256"
-            loading="lazy"
-            class="h-64 object-contain opacity-50 hover:opacity-100 transition-opacity"
-          />
-          <p class="mt-auto mb-4">
-            Segundo premio: Tarjetas regalo de 100€ para cada miembro del grupo
-            ganador
-          </p>
-        </div>
-      </div>
+      <ul class="mb-4 list-disc ps-8">
+        <li>
+          Primer premio: Tarjeta regalo de 200 € para cada miembro del equipo
+          ganador y para el/la docente que los haya acompañado.
+        </li>
+        <li>
+          Segundo premio: Tarjeta regalo de 100 € para cada miembro del equipo
+          finalista y para el/la docente que los haya acompañado.
+        </li>
+      </ul>
     </details>
     <Button
-      href="https://nantiklum.org/wp-content/uploads/2024/10/Bases-Premio-Avanza-Joven-2025_VF.pdf"
+      href="https://nantiklum.org/wp-content/uploads/2025/08/Bases-Premio-Avanza-Joven-2026.pdf"
       text="Conoce las bases de los premios"
       blank
     />
