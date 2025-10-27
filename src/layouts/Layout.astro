@@ -34,6 +34,10 @@ const { title, description, keywords, canonical, robots, img } = Astro.props;
 </html>
 
 <style is:global>
+  body {
+    overflow-y: auto !important;
+  }
+
   /** Scrollbar */
   ::-webkit-scrollbar {
     @apply w-2;
