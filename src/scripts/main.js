@@ -32,9 +32,10 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-const windowWidth = window.innerWidth;
+// const windowWidth = window.innerWidth; // La pongo debajo de la sección para que funcione con cambios en resizeo de pantalla
 
 function horizontalScrollTitle() {
+  const windowWidth = window.innerWidth;
   const sectionWidth = document.querySelector("#title > p").offsetWidth;
 
   if (windowWidth < sectionWidth) {
@@ -84,6 +85,7 @@ function horizontalScrollChallenges() {
 }
 
 function initFunctions() {
+  const windowWidth = window.innerWidth;
   horizontalScrollTitle();
   if (windowWidth > 768) {
     horizontalScrollChallenges();
