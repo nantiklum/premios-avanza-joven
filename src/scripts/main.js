@@ -39,7 +39,8 @@ function horizontalScrollTitle() {
 
   if (windowWidth < sectionWidth) {
     gsap.to("#title > p", {
-      x: () => -(sectionWidth - windowWidth) + "px",
+      //x: () => -(sectionWidth - windowWidth) + "px",
+	  x: () => -(sectionWidth - windowWidth + 24) + "px",
       ease: "none",
       scrollTrigger: {
         trigger: "#title",
@@ -95,4 +96,10 @@ function onResize() {
 }
 
 window.addEventListener("resize", onResize);
-initFunctions();
+
+// Cambio esta:
+// initFunctions();
+// Por esta:
+document.fonts.ready.then(() => {
+  initFunctions();
+});
