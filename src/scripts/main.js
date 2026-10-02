@@ -105,3 +105,19 @@ window.addEventListener("resize", onResize);
 document.fonts.ready.then(() => {
   initFunctions();
 });
+
+
+// 02/10/2026 Añadimos lógica para que el año se obtenga del servidor de NEtlify
+ 
+// PASOS QUE HEMOS REALIZADO:
+// 1º Se crea el archivo en el raiz netlify.toml (ver código)
+// 2º Se crea get-year.js en \netlify\functions\
+// 3º este código de abajo
+  fetch("/.netlify/functions/get-year")
+    .then((res) => res.json())
+    .then((data) => {
+      document.getElementById("current-year").textContent = data.year;
+    })
+    .catch(() => {
+      // Si falla la petición, se queda el valor por defecto del span (2024)
+    });
